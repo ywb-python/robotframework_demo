@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.9 on win32)" generated="20211212 18:48:03.374" rpa="false" schemaversion="2">
+<suite id="s1" name="Ecshop" source="D:\workspace\robotframework_demo\Ecshop">
+<suite id="s1-s1" name="RF基本使用" source="D:\workspace\robotframework_demo\Ecshop\RF基本使用">
+<suite id="s1-s1-s1" name="基本用法" source="D:\workspace\robotframework_demo\Ecshop\RF基本使用\基本用法.robot">
+<test id="s1-s1-s1-t1" name="输出打印">
+<kw name="Comment" library="BuiltIn">
+<arg>1.打印</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>电商</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.549" level="INFO">电商</msg>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</test>
+<test id="s1-s1-s1-t2" name="设置变量">
+<kw name="Comment" library="BuiltIn">
+<arg>1.设置变量</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${var1}</var>
+<arg>100</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211212 18:48:03.549" level="INFO">${var1} = 100</msg>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${var1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.549" level="INFO">100</msg>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.549"/>
+</test>
+<test id="s1-s1-s1-t3" name="列表用法">
+<kw name="Comment" library="BuiltIn">
+<arg>1.创建列表的方式一</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.559" endtime="20211212 18:48:03.559"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${list1}</var>
+<arg>开发</arg>
+<arg>运维</arg>
+<arg>前端</arg>
+<arg>产品</arg>
+<arg>测试</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">${list1} = ['开发', '运维', '前端', '产品', '测试']</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${list1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">['开发', '运维', '前端', '产品', '测试']</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>2.创建列表的方式二</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{list2}</var>
+<arg>开发</arg>
+<arg>运维</arg>
+<arg>前端</arg>
+<arg>产品</arg>
+<arg>测试</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">@{list2} = [ 开发 | 运维 | 前端 | 产品 | 测试 ]</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{list2}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">开发</msg>
+<msg timestamp="20211212 18:48:03.562" level="INFO">运维</msg>
+<msg timestamp="20211212 18:48:03.562" level="INFO">前端</msg>
+<msg timestamp="20211212 18:48:03.562" level="INFO">产品</msg>
+<msg timestamp="20211212 18:48:03.562" level="INFO">测试</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:03.549" endtime="20211212 18:48:03.562"/>
+</test>
+<test id="s1-s1-s1-t4" name="字典用法">
+<kw name="Comment" library="BuiltIn">
+<arg>1.创建字典</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${dic}</var>
+<arg>name=张三</arg>
+<arg>job=律师</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">${dic} = {'name': '张三', 'job': '律师'}</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${dic}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">{'name': '张三', 'job': '律师'}</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>2.获得字典的key</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Get Dictionary Keys" library="Collections">
+<var>${keys}</var>
+<arg>${dic}</arg>
+<doc>Returns keys of the given ``dictionary`` as a list.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">${keys} = ['job', 'name']</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.562"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${keys}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.562" level="INFO">['job', 'name']</msg>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.572"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>3.获得字典的value</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Get Dictionary Values" library="Collections">
+<var>${values}</var>
+<arg>${dic}</arg>
+<doc>Returns values of the given ``dictionary`` as a list.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">${values} = ['律师', '张三']</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${values}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">['律师', '张三']</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>4.获得字典的items</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Get Dictionary Items" library="Collections">
+<var>${items}</var>
+<arg>${dic}</arg>
+<doc>Returns items of the given ``dictionary`` as a list.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">${items} = ['job', '律师', 'name', '张三']</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">['job', '律师', 'name', '张三']</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>5.获得字典的key获取value</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${name}</var>
+<arg>${dic}</arg>
+<arg>name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">${name} = 张三</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.573" level="INFO">张三</msg>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:03.573"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:03.562" endtime="20211212 18:48:03.573"/>
+</test>
+<test id="s1-s1-s1-t5" name="时间处理">
+<kw name="Comment" library="BuiltIn">
+<arg>1.获得系统时间</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.584" endtime="20211212 18:48:03.584"/>
+</kw>
+<kw name="Get Time" library="BuiltIn">
+<var>${time1}</var>
+<doc>Returns the given time in the requested format.</doc>
+<msg timestamp="20211212 18:48:03.584" level="INFO">${time1} = 2021-12-12 18:48:03</msg>
+<status status="PASS" starttime="20211212 18:48:03.584" endtime="20211212 18:48:03.584"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${time1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:03.584" level="INFO">2021-12-12 18:48:03</msg>
+<status status="PASS" starttime="20211212 18:48:03.584" endtime="20211212 18:48:03.584"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>2.睡眠时间，强制等待</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:03.584" endtime="20211212 18:48:03.584"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:06.586" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:03.584" endtime="20211212 18:48:06.586"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:03.573" endtime="20211212 18:48:06.586"/>
+</test>
+<test id="s1-s1-s1-t6" name="流程控制">
+<kw name="Comment" library="BuiltIn">
+<arg>1.if流程控制</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.586"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${age}</var>
+<arg>22</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211212 18:48:06.586" level="INFO">${age} = 22</msg>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.586"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${age}&gt;30</arg>
+<arg>Log</arg>
+<arg>年龄太大</arg>
+<arg>ELSE IF</arg>
+<arg>18&lt;=${age}&lt;=30</arg>
+<arg>嵌套if</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>未成年</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="嵌套if" library="业务关键字">
+<kw name="Log" library="BuiltIn">
+<arg>年龄合适</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.596" level="INFO">年龄合适</msg>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.596"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>三观一致</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.597" level="INFO">三观一致</msg>
+<status status="PASS" starttime="20211212 18:48:06.597" endtime="20211212 18:48:06.597"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.597"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.598"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>2.for循环流程控制</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<for flavor="IN">
+<var>${a}</var>
+<value>apple</value>
+<value>orange</value>
+<value>banlana</value>
+<iter>
+<var name="${a}">apple</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">apple</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<iter>
+<var name="${a}">orange</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">orange</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<iter>
+<var name="${a}">banlana</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">banlana</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</for>
+<kw name="Create List" library="BuiltIn">
+<var>@{list1}</var>
+<arg>apple</arg>
+<arg>orange</arg>
+<arg>banlana</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">@{list1} = [ apple | orange | banlana ]</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<for flavor="IN">
+<var>${a}</var>
+<value>@{list1}</value>
+<iter>
+<var name="${a}">apple</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">apple</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<iter>
+<var name="${a}">orange</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">orange</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<iter>
+<var name="${a}">banlana</var>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.598" level="INFO">banlana</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</iter>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</for>
+<for flavor="IN RANGE">
+<var>${a}</var>
+<value>1</value>
+<value>20</value>
+<iter>
+<var name="${a}">1</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${a}==5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.598"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.608" level="INFO">1</msg>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.608"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.608"/>
+</iter>
+<iter>
+<var name="${a}">2</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${a}==5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211212 18:48:06.608" endtime="20211212 18:48:06.609"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">2</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.608" endtime="20211212 18:48:06.609"/>
+</iter>
+<iter>
+<var name="${a}">3</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${a}==5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">3</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</iter>
+<iter>
+<var name="${a}">4</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${a}==5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">4</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</iter>
+<iter>
+<var name="${a}">5</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${a}==5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</iter>
+<status status="PASS" starttime="20211212 18:48:06.598" endtime="20211212 18:48:06.609"/>
+</for>
+<status status="PASS" starttime="20211212 18:48:06.586" endtime="20211212 18:48:06.609"/>
+</test>
+<test id="s1-s1-s1-t7" name="字符串处理">
+<kw name="Comment" library="BuiltIn">
+<arg>1.字符串拼接</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${str1}</var>
+<arg>python</arg>
+<arg>java</arg>
+<arg>c#</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">${str1} = python java c#</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${str1}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.609" level="INFO">python java c#</msg>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.609" endtime="20211212 18:48:06.609"/>
+</test>
+<status status="PASS" starttime="20211212 18:48:03.396" endtime="20211212 18:48:06.609"/>
+</suite>
+<suite id="s1-s1-s2" name="方法调用" source="D:\workspace\robotframework_demo\Ecshop\RF基本使用\方法调用.robot">
+<test id="s1-s1-s2-t1" name="调用python内置方法">
+<kw name="Comment" library="BuiltIn">
+<arg>1.执行python的内置方法</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.622"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_number}</var>
+<arg>random.randint(1,101)</arg>
+<arg>modules=random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.622" level="INFO">${random_number} = 93</msg>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.622"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${random_number}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.622" level="INFO">93</msg>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.622"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${times}</var>
+<arg>time.time()</arg>
+<arg>modules=time</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.622" level="INFO">${times} = 1639306086.621835</msg>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.622"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${times}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.622" level="INFO">1639306086.621835</msg>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.622"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.632"/>
+</test>
+<test id="s1-s1-s2-t2" name="调用自定义的python方法">
+<kw name="Comment" library="BuiltIn">
+<arg>1.执行python的自定义方法,绝对路径导入</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.633" endtime="20211212 18:48:06.633"/>
+</kw>
+<kw name="Import Library" library="BuiltIn">
+<arg>D:/python_record/tool.py</arg>
+<doc>Imports a library with the given name and optional arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.633" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${a}</var>
+<arg>int(10)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.645" level="INFO">${a} = 10</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${b}</var>
+<arg>int(20)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.645" level="INFO">${b} = 20</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Add" library="tool">
+<var>${result}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<msg timestamp="20211212 18:48:06.645" level="INFO">${result} = 30</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.645" level="INFO">30</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>1.执行python的自定义方法,相对路径导入</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Import Library" library="BuiltIn">
+<arg>D:\\workspace\\robotframework_demo\\Ecshop\\RF基本使用/utils.py</arg>
+<doc>Imports a library with the given name and optional arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${a}</var>
+<arg>int(10)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.645" level="INFO">${a} = 10</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.645"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${b}</var>
+<arg>int(20)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211212 18:48:06.655" level="INFO">${b} = 20</msg>
+<status status="PASS" starttime="20211212 18:48:06.645" endtime="20211212 18:48:06.655"/>
+</kw>
+<kw name="Equal" library="utils">
+<var>${result}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<msg timestamp="20211212 18:48:06.657" level="INFO">${result} = False</msg>
+<status status="PASS" starttime="20211212 18:48:06.656" endtime="20211212 18:48:06.657"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:06.657" level="INFO">False</msg>
+<status status="PASS" starttime="20211212 18:48:06.657" endtime="20211212 18:48:06.657"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.633" endtime="20211212 18:48:06.657"/>
+</test>
+<status status="PASS" starttime="20211212 18:48:06.622" endtime="20211212 18:48:06.657"/>
+</suite>
+<status status="PASS" starttime="20211212 18:48:03.396" endtime="20211212 18:48:06.657"/>
+</suite>
+<suite id="s1-s2" name="UI自动化" source="D:\workspace\robotframework_demo\Ecshop\UI自动化">
+<suite id="s1-s2-s1" name="UI用例" source="D:\workspace\robotframework_demo\Ecshop\UI自动化\UI用例.robot">
+<test id="s1-s2-s1-t1" name="打开浏览器">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.baidu.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211212 18:48:06.679" level="INFO">Opening browser 'Chrome' to base url 'https://www.baidu.com/'.</msg>
+<status status="PASS" starttime="20211212 18:48:06.679" endtime="20211212 18:48:08.986"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>隐式等待</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:08.986" endtime="20211212 18:48:08.994"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20211212 18:48:08.995" endtime="20211212 18:48:08.998"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:11.009" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:08.999" endtime="20211212 18:48:11.009"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211212 18:48:11.009" endtime="20211212 18:48:11.141"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:13.152" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:11.143" endtime="20211212 18:48:13.152"/>
+</kw>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<arg>1024</arg>
+<arg>768</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20211212 18:48:13.153" endtime="20211212 18:48:13.418"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:15.423" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:13.418" endtime="20211212 18:48:15.423"/>
+</kw>
+<kw name="Get Window Position" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window position.</doc>
+<msg timestamp="20211212 18:48:15.429" level="INFO">${width} = 1023</msg>
+<msg timestamp="20211212 18:48:15.429" level="INFO">${height} = 767</msg>
+<status status="PASS" starttime="20211212 18:48:15.425" endtime="20211212 18:48:15.429"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${height}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:15.433" level="INFO">767</msg>
+<status status="PASS" starttime="20211212 18:48:15.432" endtime="20211212 18:48:15.433"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${width}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:15.433" level="INFO">1023</msg>
+<status status="PASS" starttime="20211212 18:48:15.433" endtime="20211212 18:48:15.433"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:17.448" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:15.435" endtime="20211212 18:48:17.448"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20211212 18:48:17.450" endtime="20211212 18:48:17.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:19.562" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:17.557" endtime="20211212 18:48:19.563"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://npm.taobao.org/mirrors/chromedriver/96.0.4664.45/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211212 18:48:19.565" level="INFO">Opening url 'http://npm.taobao.org/mirrors/chromedriver/96.0.4664.45/'</msg>
+<status status="PASS" starttime="20211212 18:48:19.565" endtime="20211212 18:48:20.213"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20211212 18:48:20.213" endtime="20211212 18:48:20.275"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:22.288" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:20.278" endtime="20211212 18:48:22.288"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20211212 18:48:22.297" level="INFO">${title} = ChromeDriver Mirror</msg>
+<status status="PASS" starttime="20211212 18:48:22.290" endtime="20211212 18:48:22.297"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:22.297" level="INFO">ChromeDriver Mirror</msg>
+<status status="PASS" starttime="20211212 18:48:22.297" endtime="20211212 18:48:22.297"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:24.304" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:22.297" endtime="20211212 18:48:24.304"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20211212 18:48:24.312" level="INFO">${loc} = http://npm.taobao.org/mirrors/chromedriver/96.0.4664.45/</msg>
+<status status="PASS" starttime="20211212 18:48:24.304" endtime="20211212 18:48:24.312"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211212 18:48:24.312" level="INFO">http://npm.taobao.org/mirrors/chromedriver/96.0.4664.45/</msg>
+<status status="PASS" starttime="20211212 18:48:24.312" endtime="20211212 18:48:24.312"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211212 18:48:26.321" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211212 18:48:24.312" endtime="20211212 18:48:26.321"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211212 18:48:26.321" endtime="20211212 18:48:28.476"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:06.679" endtime="20211212 18:48:28.476"/>
+</test>
+<test id="s1-s2-s1-t2" name="元素定位">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.baidu.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211212 18:48:28.476" level="INFO">Opening browser 'Chrome' to base url 'https://www.baidu.com/'.</msg>
+<status status="PASS" starttime="20211212 18:48:28.476" endtime="20211212 18:48:30.439"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>id=kw</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>name=wd</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>identifier=wd</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>link=新闻</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>partial link=新</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>xpath=//form/span/input</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.443" endtime="20211212 18:48:30.443"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>xpath=//input[@autocomplete="off"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.451" endtime="20211212 18:48:30.452"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>xpath=//input[@autocomplete="off" and @class="s_ipt"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.453" endtime="20211212 18:48:30.453"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>xpath=//input[starts-with(@autocomplete,"of")]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.455" endtime="20211212 18:48:30.455"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>xpath=//input[contains(@autocomplete,"of")]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.455" endtime="20211212 18:48:30.458"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>xpath=//a[text()="新闻"]</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.458" endtime="20211212 18:48:30.458"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>css=input[autocomplete="off"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.460" endtime="20211212 18:48:30.460"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>css=input[autocomplete="off"][class="s_ipt"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.461" endtime="20211212 18:48:30.461"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>css=input[autocomplete^="of"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.461" endtime="20211212 18:48:30.461"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>css=input[autocomplete$="f"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.461" endtime="20211212 18:48:30.461"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Input Text</arg>
+<arg>css=input[autocomplete*="of"]</arg>
+<arg>三国演义</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20211212 18:48:30.461" endtime="20211212 18:48:30.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=div#s-top-left a:nth-child(3)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211212 18:48:30.461" level="INFO">Clicking element 'css=div#s-top-left a:nth-child(3)'.</msg>
+<status status="PASS" starttime="20211212 18:48:30.461" endtime="20211212 18:48:30.664"/>
+</kw>
+<status status="PASS" starttime="20211212 18:48:28.476" endtime="20211212 18:48:30.664"/>
+</test>
+<status status="PASS" starttime="20211212 18:48:06.669" endtime="20211212 18:48:30.664"/>
+</suite>
+<status status="PASS" starttime="20211212 18:48:06.669" endtime="20211212 18:48:30.675"/>
+</suite>
+<suite id="s1-s3" name="商品管理" source="D:\workspace\robotframework_demo\Ecshop\商品管理">
+<suite id="s1-s3-s1" name="查询用例" source="D:\workspace\robotframework_demo\Ecshop\商品管理\查询用例.robot">
+<test id="s1-s3-s1-t1" name="查询商品">
+<kw name="Open Browser">
+<arg>https://localhost/ecshop/admin/index.php</arg>
+<arg>Chrome</arg>
+<msg timestamp="20211212 18:48:30.696" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211212 18:48:30.696" endtime="20211212 18:48:30.696"/>
+</kw>
+<kw name="Set Browser Implicit Wait">
+<arg>5</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.698" endtime="20211212 18:48:30.698"/>
+</kw>
+<kw name="Input Text">
+<arg>name=username</arg>
+<arg>admin</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.698" endtime="20211212 18:48:30.698"/>
+</kw>
+<kw name="Input Text">
+<arg>name=password</arg>
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.707" endtime="20211212 18:48:30.707"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//input[@value="进入管理中心"]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.707" endtime="20211212 18:48:30.707"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211212 18:48:30.707" endtime="20211212 18:48:30.707"/>
+</kw>
+<kw name="Select Frame">
+<arg>menu-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.716" endtime="20211212 18:48:30.716"/>
+</kw>
+<kw name="Click Element">
+<arg>link=商品列表</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.719" endtime="20211212 18:48:30.719"/>
+</kw>
+<kw name="Unselect Frame">
+<status status="NOT RUN" starttime="20211212 18:48:30.727" endtime="20211212 18:48:30.727"/>
+</kw>
+<kw name="Select Frame">
+<arg>main-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.727" endtime="20211212 18:48:30.727"/>
+</kw>
+<kw name="Select From List By Value">
+<arg>name=brand_id</arg>
+<arg>9</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.734" endtime="20211212 18:48:30.734"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Select From List By Index</arg>
+<arg>name=brand_id</arg>
+<arg>3</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="NOT RUN" starttime="20211212 18:48:30.734" endtime="20211212 18:48:30.734"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Select From List By Label</arg>
+<arg>name=brand_id</arg>
+<arg>联想</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="NOT RUN" starttime="20211212 18:48:30.734" endtime="20211212 18:48:30.734"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//input[@value=" 搜索 "]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.734" endtime="20211212 18:48:30.734"/>
+</kw>
+<status status="FAIL" starttime="20211212 18:48:30.688" endtime="20211212 18:48:30.734">No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s3-s1-t2" name="商品删除">
+<kw name="Open Browser">
+<arg>https://localhost/ecshop/admin/index.php</arg>
+<arg>Chrome</arg>
+<msg timestamp="20211212 18:48:30.753" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211212 18:48:30.753" endtime="20211212 18:48:30.753"/>
+</kw>
+<kw name="Set Browser Implicit Wait">
+<arg>5</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.755" endtime="20211212 18:48:30.755"/>
+</kw>
+<kw name="Input Text">
+<arg>name=username</arg>
+<arg>admin</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.763" endtime="20211212 18:48:30.763"/>
+</kw>
+<kw name="Input Text">
+<arg>name=password</arg>
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.764" endtime="20211212 18:48:30.764"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//input[@value="进入管理中心"]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.764" endtime="20211212 18:48:30.772"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211212 18:48:30.772" endtime="20211212 18:48:30.772"/>
+</kw>
+<kw name="Select Frame">
+<arg>menu-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.777" endtime="20211212 18:48:30.777"/>
+</kw>
+<kw name="Click Element">
+<arg>link=商品列表</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.777" endtime="20211212 18:48:30.777"/>
+</kw>
+<kw name="Unselect Frame">
+<status status="NOT RUN" starttime="20211212 18:48:30.788" endtime="20211212 18:48:30.788"/>
+</kw>
+<kw name="Select Frame">
+<arg>main-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.789" endtime="20211212 18:48:30.789"/>
+</kw>
+<kw name="Get WebElements">
+<var>${deletelist}</var>
+<arg>xpath=//image[@src="images/icon_trash.gif"]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.793" endtime="20211212 18:48:30.793"/>
+</kw>
+<kw name="Click Element">
+<arg>${deletelist[0]}</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.793" endtime="20211212 18:48:30.793"/>
+</kw>
+<kw name="Handle Alert">
+<status status="NOT RUN" starttime="20211212 18:48:30.803" endtime="20211212 18:48:30.803"/>
+</kw>
+<status status="FAIL" starttime="20211212 18:48:30.744" endtime="20211212 18:48:30.803">No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s3-s1-t3" name="批量删除">
+<kw name="Open Browser">
+<arg>https://localhost/ecshop/admin/index.php</arg>
+<arg>Chrome</arg>
+<msg timestamp="20211212 18:48:30.803" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211212 18:48:30.803" endtime="20211212 18:48:30.811"/>
+</kw>
+<kw name="Set Browser Implicit Wait">
+<arg>5</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.814" endtime="20211212 18:48:30.814"/>
+</kw>
+<kw name="Input Text">
+<arg>name=username</arg>
+<arg>admin</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.814" endtime="20211212 18:48:30.814"/>
+</kw>
+<kw name="Input Text">
+<arg>name=password</arg>
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.822" endtime="20211212 18:48:30.822"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//input[@value="进入管理中心"]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.823" endtime="20211212 18:48:30.823"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211212 18:48:30.823" endtime="20211212 18:48:30.823"/>
+</kw>
+<kw name="Select Frame">
+<arg>menu-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.823" endtime="20211212 18:48:30.823"/>
+</kw>
+<kw name="Click Element">
+<arg>link=商品列表</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.831" endtime="20211212 18:48:30.831"/>
+</kw>
+<kw name="Unselect Frame">
+<status status="NOT RUN" starttime="20211212 18:48:30.831" endtime="20211212 18:48:30.831"/>
+</kw>
+<kw name="Select Frame">
+<arg>main-frame</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.839" endtime="20211212 18:48:30.839"/>
+</kw>
+<kw name="Get WebElements">
+<var>${checkboxlist}</var>
+<arg>name=checkboxes[]</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.839" endtime="20211212 18:48:30.839"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${a}</var>
+<value>0</value>
+<value>2</value>
+<iter>
+<var name="${a}">${a}</var>
+<kw name="Click Element">
+<arg>${checkboxlist[${a}]}</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.848" endtime="20211212 18:48:30.848"/>
+</kw>
+<status status="NOT RUN" starttime="20211212 18:48:30.839" endtime="20211212 18:48:30.848"/>
+</iter>
+<status status="NOT RUN" starttime="20211212 18:48:30.839" endtime="20211212 18:48:30.848"/>
+</for>
+<kw name="Select From List By Value">
+<arg>id=selAction</arg>
+<arg>trash</arg>
+<status status="NOT RUN" starttime="20211212 18:48:30.849" endtime="20211212 18:48:30.849"/>
+</kw>
+<kw name="Handle Alert">
+<status status="NOT RUN" starttime="20211212 18:48:30.849" endtime="20211212 18:48:30.849"/>
+</kw>
+<status status="FAIL" starttime="20211212 18:48:30.803" endtime="20211212 18:48:30.849">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20211212 18:48:30.683" endtime="20211212 18:48:30.857"/>
+</suite>
+<status status="FAIL" starttime="20211212 18:48:30.675" endtime="20211212 18:48:30.857"/>
+</suite>
+<status status="FAIL" starttime="20211212 18:48:03.374" endtime="20211212 18:48:30.868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="3" skip="0" id="s1" name="Ecshop">Ecshop</stat>
+<stat pass="9" fail="0" skip="0" id="s1-s1" name="RF基本使用">Ecshop.RF基本使用</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s1-s1" name="基本用法">Ecshop.RF基本使用.基本用法</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s2" name="方法调用">Ecshop.RF基本使用.方法调用</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="UI自动化">Ecshop.UI自动化</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2-s1" name="UI用例">Ecshop.UI自动化.UI用例</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s3" name="商品管理">Ecshop.商品管理</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s3-s1" name="查询用例">Ecshop.商品管理.查询用例</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
