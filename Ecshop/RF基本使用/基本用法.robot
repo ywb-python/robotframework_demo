@@ -60,7 +60,7 @@ Resource          业务关键字.robot
         Log    ${a}
     END
     FOR    ${a}    IN RANGE    1    20
-    Run Keyword If    ${a}==5    Exit For Loop
+        Run Keyword If    ${a}==5    Exit For Loop
         Log    ${a}
     END
 
