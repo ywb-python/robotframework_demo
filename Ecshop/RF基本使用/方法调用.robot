@@ -13,3 +13,9 @@
     ${b}    Evaluate    int(20)
     ${result}    add    ${a}    ${b}
     Log    ${result}
+    Comment    1.执行python的自定义方法,相对路径导入
+    Import Library    ${CURDIR}/utils.py
+    ${a}    Evaluate    int(10)
+    ${b}    Evaluate    int(20)
+    ${result}    equal    ${a}    ${b}
+    Log    ${result}
